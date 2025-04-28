@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="input-container">
+        <div class="input-box">
+            <h1>Take a Break</h1>
+            <p class="instructions">Set how long you need the 'update' screen to run.</p>
+            <label for="timeInput">Break time (minutes):</label>
+            <input type="number" id="timeInput" min="1" value="5">
+            <button id="startButton">Start Fake Update</button>
+            <p id="error-message" class="error"></p>
+        </div>
+    </div>
+
+    <div id="updateScreen">
+
+        <div class="simple-spinner"></div>
+        <div class="update-text">
+            <p>Working on updates <span id="percentage">0</span>% complete.</p>
+            <p>Don't turn off your PC. This will take a while.</p>
+        </div>
+        <div class="footer-text">
+            <p>Your PC will restart several times</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
